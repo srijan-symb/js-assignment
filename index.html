@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>new </h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List with Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="todoApp">
+    <h2>My To-Do List</h2>
+
+    <div class="input-container">
+
+        <input type="text" id="newTaskInput" placeholder="Enter a new task...">
+
+
+        <select id="categoryDropdown">
+            <option value="" disabled selected>Select Category</option>
+            <option value="Personal">Personal</option>
+            <option value="Books to read">Books to read</option>
+            <option value="To Buy">To Buy</option>
+        </select>
+
+
+        <button onclick="newTask()">Add</button>
+    </div>
+
+
+    <ul id="todoList"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
